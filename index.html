@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Acme Business Solutions provides innovative business consulting, digital transformation, and marketing services to help your company grow and succeed.">
+    <meta name="keywords"
+        content="business consulting, digital transformation, marketing services, business growth, professional services">
+    <title>Acme Business Solutions | Innovative Business Consulting</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fix for Font Awesome icons - using CDN version instead of kit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300" id="main-nav">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">Acme Solutions</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">About</a>
+                <a href="#services"
+                    class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Services</a>
+                <a href="#testimonials"
+                    class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Testimonials</a>
+                <a href="#contact"
+                    class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full" id="mobile-menu">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="#home" class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">About</a>
+                <a href="#services"
+                    class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Services</a>
+                <a href="#testimonials"
+                    class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Testimonials</a>
+                <a href="#contact"
+                    class="text-gray-800 hover:text-blue-600 transition duration-300 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home"
+        class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-500 to-indigo-600 text-white relative">
+        <div class="container mx-auto px-6 flex flex-col items-center">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Innovative Business Solutions</h1>
+                <p class="text-xl md:text-2xl mb-8">Transforming ideas into successful realities for businesses of all
+                    sizes</p>
+                <a href="#contact"
+                    class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Get
+                    Started</a>
+            </div>
+            <div class="mt-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400&q=80"
+                    alt="Business team collaborating on project" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Modern office with business professionals" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">About Acme Solutions</h2>
+                    <p class="text-gray-600 mb-4">Founded in 2010, Acme Solutions has been at the forefront of business
+                        innovation, helping companies navigate the complexities of modern markets and technology.</p>
+                    <p class="text-gray-600 mb-4">Our team of experienced consultants brings expertise from various
+                        industries, allowing us to provide tailored solutions that address your specific challenges and
+                        opportunities.</p>
+                    <p class="text-gray-600 mb-6">We believe in building long-term partnerships with our clients,
+                        focusing on sustainable growth and measurable results.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-600">500+</h3>
+                            <p class="text-gray-600">Clients Served</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-600">98%</h3>
+                            <p class="text-gray-600">Client Satisfaction</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-600">15+</h3>
+                            <p class="text-gray-600">Years Experience</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-600">24/7</h3>
+                            <p class="text-gray-600">Client Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Business Strategy</h3>
+                    <p class="text-gray-600">We develop comprehensive business strategies that align with your vision
+                        and goals, helping you navigate market challenges and capitalize on opportunities.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li>• Market Analysis</li>
+                        <li>• Competitive Positioning</li>
+                        <li>• Growth Planning</li>
+                        <li>• Risk Management</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Digital Transformation</h3>
+                    <p class="text-gray-600">We guide businesses through digital transformation, helping them leverage
+                        technology to improve operations, enhance customer experiences, and drive growth.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li>• Technology Assessment</li>
+                        <li>• Digital Strategy</li>
+                        <li>• Process Automation</li>
+                        <li>• Cloud Migration</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Marketing & Branding</h3>
+                    <p class="text-gray-600">Our marketing and branding services help you build a strong brand identity,
+                        reach your target audience, and create compelling campaigns that drive results.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li>• Brand Development</li>
+                        <li>• Digital Marketing</li>
+                        <li>• Content Strategy</li>
+                        <li>• Social Media Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#services"
+                    class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 btn-hover-effect">View
+                    All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md relative testimonial-quote" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Acme Solutions transformed our business operations, resulting
+                        in a 30% increase in efficiency and significant cost savings. Their team's expertise and
+                        dedication were invaluable."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=60&h=60&q=80"
+                            alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-gray-500">CEO, TechCorp Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md relative testimonial-quote" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Working with Acme Solutions has been a game-changer for our
+                        company. Their strategic insights and innovative approach helped us navigate a challenging
+                        market and achieve remarkable growth."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=60&h=60&q=80"
+                            alt="Michael Chen" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-gray-500">COO, Global Retail Group</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md relative testimonial-quote" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"The digital transformation led by Acme Solutions
+                        revolutionized our customer experience and internal processes. Their team's expertise and
+                        commitment to our success exceeded our expectations."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=60&h=60&q=80"
+                            alt="Emily Rodriguez" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Emily Rodriguez</h4>
+                            <p class="text-gray-500">CTO, Healthcare Innovations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white parallax-bg"
+        style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=600&q=80');">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Ready to transform your business?</h2>
+            <p class="text-xl mb-8" data-aos="fade-up" data-aos-delay="100">Let's work together to achieve your goals
+                and drive sustainable growth.</p>
+            <a href="#contact"
+                class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 btn-hover-effect"
+                data-aos="fade-up" data-aos-delay="200">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contact Us</h2>
+            <div class="flex flex-col md:flex-row">
+                <!-- Contact Information -->
+                <div class="md:w-1/3 mb-8 md:mb-0" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                    <p class="text-gray-600 mb-8">Have questions or ready to start your business transformation? Contact
+                        us today and our team will get back to you promptly.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Our Office</h4>
+                                <p class="text-gray-600">123 Business St, Suite 100<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Phone</h4>
+                                <p class="text-gray-600">(555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Email</h4>
+                                <p class="text-gray-600">info@acmesolutions.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Business Hours</h4>
+                                <p class="text-gray-600">Monday - Friday: 9am - 5pm<br>Saturday - Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="md:w-2/3 md:pl-12" data-aos="fade-left">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="from_name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="from_name" name="from_name"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" name="email"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" id="submit-btn"
+                                    class="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition duration-300 btn-hover-effect">
+                                    <span id="submit-text">Send Message</span>
+                                    <span id="submit-loader" class="hidden">
+                                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                                stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor"
+                                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                            </path>
+                                        </svg>
+                                        Sending...
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div id="form-status" class="hidden p-4 rounded-md"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Location</h2>
+                <div class="h-96 w-full rounded-lg overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343077!2d-74.0059418!3d40.7127847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Manhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1630000000000!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Acme Solutions</h3>
+                    <p class="text-gray-400">Transforming businesses with innovative solutions since 2010.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home"
+                                class="text-gray-400 hover:text-white transition duration-300 nav-link">Home</a></li>
+                        <li><a href="#about"
+                                class="text-gray-400 hover:text-white transition duration-300 nav-link">About</a></li>
+                        <li><a href="#services"
+                                class="text-gray-400 hover:text-white transition duration-300 nav-link">Services</a>
+                        </li>
+                        <li><a href="#testimonials"
+                                class="text-gray-400 hover:text-white transition duration-300 nav-link">Testimonials</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-white transition duration-300 nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Business St, Suite 100</li>
+                        <li>New York, NY 10001</li>
+                        <li>info@acmesolutions.com</li>
+                        <li>(555) 123-4567</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Acme Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Ensure all content is visible after page load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Make all sections visible by default to prevent disappearing content
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+
+</html>
